@@ -98,9 +98,8 @@ router.post('/process_easypost_webhook', bodyParser,  async (ctx,next) => {
      
 
 router.get('*', verifyRequest(), async (ctx) => {
-        console.log("OK so here ..");
-
-       });
+        
+    });
 
 server.use(router.allowedMethods());         
 server.use(router.routes())
